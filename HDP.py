@@ -15,3 +15,5 @@ print(df.head())
 sns.countplot(x='Heart Disease Status', data=df)
 plt.title("Heart Disease Count")
 plt.show()
+
+df = df.fillna(df['tr'].mean(), inplace=True)
